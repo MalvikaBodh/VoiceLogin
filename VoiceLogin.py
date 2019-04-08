@@ -1,11 +1,19 @@
+import sys
+!{sys.executable} -m pip install speech_recognition
+!{sys.executable} -m pip install gtts
+!{sys.executable} -m pip install urllib3
+!{sys.executable} -m pip install webdriver
+!{sys.executable} -m pip install time
+!{sys.executable} -m pip install pygame
+!{sys.executable} -m pip install selenium
+
+#importing packages
 import speech_recognition as sr
 from gtts import gTTS
 import urllib3
 from selenium import webdriver
 from time import sleep
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-
 from pygame import mixer
 
 mixer.init()
